@@ -75,10 +75,6 @@ function createTemplate (data) {
     return htmlTemplate;
 }
 
-app.get('/', function (req, res) {
-  res.send(createTemplate(articleOne));
-});
-
 app.get('/:articleName', function(req, res) {
     // articleName == article-one
     // articles[articleName] == {} content object for article one
