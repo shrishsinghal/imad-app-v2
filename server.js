@@ -53,7 +53,7 @@ function createTemplate (data) {
         <link href="/ui/style.css" rel="stylesheet" />
     </head>    
      <body>
-        <div class="container">
+        <div class = "container">
             
             <div>
                 <a href="/Home">Home</a>
@@ -72,7 +72,7 @@ function createTemplate (data) {
       </body>   
     </html>
     `;
-    return htmlTemplate;
+    return htmlTemplate ;
 }
 
 app.get('/:articleName', function(req, res) {
