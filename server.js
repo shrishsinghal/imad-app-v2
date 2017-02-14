@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articles = {
-'article-one' : {
+'Article-One' : {
     title: 'Article One | Shrish Kumar Sinhal',
     heading: 'Article One',
     date: 'Feb 9, 2017',
@@ -80,7 +80,7 @@ res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 
 
 app.get('/:articleName', function(req, res) {
-    // articleName == article-one
+    // articleName == article-One
     // articles[articleName] == {} content object for article one
     var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
