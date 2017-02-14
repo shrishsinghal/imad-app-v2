@@ -22,7 +22,7 @@ var articles = {
             This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
         </p>`
 },
-'article-two' : {title: 'Article Two | Shrish Kumar Sinhal',
+'Article-Two' : {title: 'Article Two | Shrish Kumar Sinhal',
     heading: 'Article Two',
     date: 'Feb 9, 2017',
     content: `
@@ -30,7 +30,7 @@ var articles = {
             This is the content for my second article. 
         </p>`
     },
-'article-three' : {title: 'Article Three | Shrish Kumar Sinhal',
+'Article-Three' : {title: 'Article Three | Shrish Kumar Sinhal',
     heading: 'Article Three',
     date: 'Feb 9, 2017',
     content: `
@@ -80,7 +80,7 @@ res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 
 
 app.get('/:articleName', function(req, res) {
-    // articleName == article-One
+    // articleName == Article-One
     // articles[articleName] == {} content object for article one
     var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
