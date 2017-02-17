@@ -30,7 +30,7 @@ button.onclick = function () {
         }
         }
     };
-    // MAke the request
+    // Make the request
     request.open('GET', 'http://shrishsinghal.imad.hasura-app.io/counter', true);
     request.send(null);
 };
